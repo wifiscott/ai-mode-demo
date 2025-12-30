@@ -1,214 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Evergreen ENT & Airway Center — AI‑Mode Structured Page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evergreen ENT & Airway Center — AI‑Mode Demo</title>
 
-  <!-- MedicalClinic JSON-LD -->
+  <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "MedicalClinic",
     "name": "Evergreen ENT & Airway Center",
     "url": "https://wifiscott.github.io/ai-mode-demo/",
-    "telephone": "+1-555-482-1190",
+    "description": "Evergreen ENT & Airway Center provides Balloon Sinuplasty, allergy care, snoring treatment, and comprehensive ENT services in Austin, TX.",
+    "medicalSpecialty": "Otolaryngology",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "1450 Westlake Medical Plaza, Suite 220",
+      "streetAddress": "123 Evergreen Way",
       "addressLocality": "Austin",
       "addressRegion": "TX",
       "postalCode": "78701",
       "addressCountry": "US"
     },
-    "medicalSpecialty": [
-      "Otolaryngologic",
-      "Allergy",
-      "SleepMedicine",
-      "PediatricOtolaryngology"
-    ],
-    "areaServed": {
-      "@type": "City",
-      "name": "Austin"
-    },
-    "employee": {
+    "provider": {
       "@type": "Physician",
       "name": "Dr. Michael Turner, MD",
-      "medicalSpecialty": [
-        "Otolaryngology",
-        "SinusDisorders",
-        "SleepApnea",
-        "Allergy"
-      ],
-      "alumniOf": [
-        {
-          "@type": "CollegeOrUniversity",
-          "name": "Baylor University"
-        },
-        {
-          "@type": "CollegeOrUniversity",
-          "name": "University of Texas Medical Branch"
-        }
-      ],
-      "description": "Board-certified otolaryngologist specializing in chronic sinusitis, snoring, sleep apnea, allergy evaluation, pediatric ENT care, rhinoplasty, head and neck surgery, and ear/hearing disorders.",
-      "worksFor": {
-        "@type": "MedicalClinic",
-        "name": "Evergreen ENT & Airway Center"
-      }
+      "medicalSpecialty": "Otolaryngology",
+      "description": "Dr. Michael Turner, MD is an ENT specialist providing Balloon Sinuplasty, allergy care, and airway-focused treatment in Austin, TX."
     },
-    "availableService": [
-      {
-        "@type": "MedicalProcedure",
-        "name": "Balloon Sinuplasty",
-        "description": "Minimally invasive procedure that opens blocked sinus pathways using a small balloon catheter to restore natural drainage and relieve chronic sinus symptoms.",
-        "indication": [
-          {
-            "@type": "MedicalCondition",
-            "name": "Chronic Sinusitis",
-            "description": "Chronic inflammation of the sinus passages lasting 12+ weeks, causing congestion, facial pressure, headaches, and difficulty breathing."
-          },
-          {
-            "@type": "MedicalCondition",
-            "name": "Recurrent Sinus Infections"
-          },
-          {
-            "@type": "MedicalCondition",
-            "name": "Nasal Obstruction"
-          },
-          {
-            "@type": "MedicalCondition",
-            "name": "Facial Pressure and Pain"
-          },
-          {
-            "@type": "MedicalCondition",
-            "name": "Difficulty Breathing Through the Nose"
-          }
-        ],
-        "provider": {
-          "@type": "Physician",
-          "name": "Dr. Michael Turner, MD"
-        }
-      }
+    "sameAs": [
+      "https://wifiscott.github.io/ai-mode-demo/"
     ]
-  }
-  </script>
-
-  <!-- FAQPage JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What can I expect at my first appointment?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You’ll review your medical history, meet with an ENT provider, undergo an exam, and receive diagnostic testing if needed."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What causes snoring?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Snoring occurs when relaxed tissues in the airway vibrate during sleep. It may indicate airway obstruction or sleep apnea."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How can I reduce mild or occasional snoring?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Maintain a healthy weight, avoid alcohol before bedtime, sleep on your side, elevate the head of the bed, and keep consistent sleep habits."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "When should I see a doctor for snoring?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "If snoring is loud, persistent, disrupts sleep, causes daytime fatigue, or includes choking or gasping episodes."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <!-- MedicalWebPage JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    "name": "Balloon Sinuplasty in Austin, TX",
-    "about": {
-      "@type": "MedicalProcedure",
-      "name": "Balloon Sinuplasty",
-      "description": "Minimally invasive sinus procedure performed in-office to open blocked sinus pathways and restore natural drainage."
-    },
-    "medicalSpecialty": "Otolaryngologic",
-    "url": "https://wifiscott.wixsite.com/ai-mode-structured-p",
-    "publisher": {
-      "@type": "MedicalClinic",
-      "name": "Evergreen ENT & Airway Center"
-    }
   }
   </script>
 
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 700px;
+      max-width: 800px;
       margin: 40px auto;
-      padding: 0 20px;
       line-height: 1.6;
+      padding: 0 20px;
     }
     h1, h2, h3 {
-      font-weight: 600;
+      color: #2a4d69;
+    }
+    .section {
+      margin-bottom: 32px;
     }
   </style>
 </head>
 
 <body>
 
-  <p>This page provides information about Evergreen ENT & Airway Center in Austin, TX, including Balloon Sinuplasty, conditions treated, provider details, and FAQs.</p>
   <h1>Evergreen ENT & Airway Center</h1>
-  <p><strong>Website:</strong> https://wifiscott.github.io/ai-mode-demo/</p>
-  <p><strong>Phone:</strong> (555) 482‑1190</p>
-  <p><strong>Location:</strong> Austin, TX</p>
+  <p>Austin, TX</p>
+  <p><strong>Website:</strong> <a href="https://wifiscott.github.io/ai-mode-demo/">https://wifiscott.github.io/ai-mode-demo/</a></p>
 
-  <h2>Balloon Sinuplasty in Austin, TX</h2>
-  <p>Evergreen ENT & Airway Center provides minimally invasive Balloon Sinuplasty for chronic sinusitis, nasal obstruction, and recurrent sinus infections.</p>
+  <div class="section">
+    <h2>Your ENT Specialist: <br> <strong>Dr. Michael Turner, MD</strong></h2>
+    <p>Dr. Turner provides comprehensive ENT care including Balloon Sinuplasty, allergy treatment, snoring solutions, and airway-focused evaluation.</p>
+  </div>
 
-  <h2>Conditions We Treat</h2>
-  <ul>
-    <li>Chronic Sinusitis</li>
-    <li>Recurrent Sinus Infections</li>
-    <li>Nasal Obstruction</li>
-    <li>Snoring & Sleep‑Related Breathing Issues</li>
-    <li>Allergy‑Related Nasal Symptoms</li>
-  </ul>
+  <div class="section">
+    <h2>Conditions We Treat</h2>
+    <ul>
+      <li>Chronic sinusitis</li>
+      <li>Allergies</li>
+      <li>Snoring & sleep-disordered breathing</li>
+      <li>Nasal obstruction</li>
+      <li>Deviated septum</li>
+      <li>Recurrent sinus infections</li>
+    </ul>
+  </div>
 
-  <h2>Provider</h2>
-  <p><strong>Michael Turner, MD</strong><br>
-  Board‑certified ENT specializing in sinus disorders, sleep apnea, allergy evaluation, and pediatric ENT care.</p>
+  <div class="section">
+    <h2>Balloon Sinuplasty in Austin, TX</h2>
+    <p>Evergreen ENT provides minimally invasive Balloon Sinuplasty for long-term relief from chronic sinus issues. This in-office procedure opens blocked sinus pathways without cutting or removing tissue.</p>
+  </div>
 
-  <h2>FAQ</h2>
-  <h3>What can I expect at my first appointment?</h3>
-  <p>You’ll review your medical history, meet with an ENT provider, undergo an exam, and receive diagnostic testing if needed.</p>
+  <div class="section">
+    <h2>What to Expect at Your First Appointment</h2>
+    <p>Your visit includes a full ENT evaluation, nasal endoscopy if needed, and a personalized treatment plan. Dr. Turner focuses on airway-first diagnosis and long-term relief.</p>
+  </div>
 
-  <h3>What causes snoring?</h3>
-  <p>Snoring occurs when relaxed tissues in the airway vibrate during sleep. It may indicate airway obstruction or sleep apnea.</p>
+  <div class="section">
+    <h2>Frequently Asked Questions</h2>
+    <h3>Do you offer Balloon Sinuplasty?</h3>
+    <p>Yes — we provide in-office Balloon Sinuplasty for chronic sinusitis.</p>
 
-  <h3>How can I reduce mild or occasional snoring?</h3>
-  <p>Maintain a healthy weight, avoid alcohol before bedtime, sleep on your side, elevate the head of the bed, and keep consistent sleep habits.</p>
+    <h3>Who performs the procedure?</h3>
+    <p>All procedures are performed by <strong>Dr. Michael Turner, MD</strong>.</p>
 
-  <h3>When should I see a doctor for snoring?</h3>
-  <p>If snoring is loud, persistent, disrupts sleep, causes daytime fatigue, or includes choking or gasping episodes.</p>
+    <h3>Where are you located?</h3>
+    <p>We are located in Austin, TX.</p>
+  </div>
 
 </body>
 </html>
-
-
-
-
